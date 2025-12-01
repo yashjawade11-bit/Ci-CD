@@ -1,0 +1,9 @@
+/*
+ * Custom styles for Yash Jawade Portfolio.
+ * Used for basic font configuration outside of Tailwind.
+ */
+
+/* Sets the global font family */
+body {
+    font-family: 'Inter', sans-serif;
+}
