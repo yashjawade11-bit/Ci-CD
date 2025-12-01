@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ya<!DOCTYPE html>
+sh Jawade | Portfolio</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use the Inter font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#4F46E5', // Indigo (Used for main branding)
+                        'secondary': '#10B981', // Emerald (Used for CTAs/accents)
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Simple Custom Style for Font -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col antialiased">
+
+    <!-- Header/Navigation Bar -->
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-primary">
+                Yash Jawade
+            </div>
+            <nav class="space-x-4">
+                <a href="#projects" class="text-gray-600 hover:text-primary transition duration-150">Projects</a>
+                <a href="#skills" class="text-gray-600 hover:text-primary transition duration-150">Skills</a>
+                <a href="#" id="cta-button-nav" class="px-4 py-2 bg-secondary text-white font-medium rounded-lg hover:bg-emerald-600 transition duration-150 shadow-md">Contact Me</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <main class="flex-grow">
+        <section class="py-20 md:py-32 bg-white text-center">
+            <div class="max-w-4xl mx-auto px-4">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                    Automating Infrastructure and Streamlining Delivery as a DevOps Engineer
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Hi, I'm Yash Jawade, a DevOps Engineer specializing in robust CI/CD pipelines, cloud infrastructure (AWS/Azure), and operational excellence.
+                </p>
+                <button id="main-cta-button" class="px-10 py-4 bg-primary text-white text-lg font-semibold rounded-xl shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-50">
+                    View My Projects
+                </button>
+            </div>
+        </section>
+
+        <!-- Skills/Expertise Section -->
+        <section id="skills" class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">My Core Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Skill Card 1: DevOps Engineering -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary">
+                        <div class="text-3xl text-primary mb-3">⚙️</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">DevOps Engineering</h3>
+                        <p class="text-gray-500">Expertise in Infrastructure as Code (IaC), containerization (Docker, Kubernetes), and cloud providers (AWS, Azure).</p>
+                    </div>
+
+                    <!-- Skill Card 2: CI/CD Automation -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-secondary">
+                        <div class="text-3xl text-secondary mb-3">🔄</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">CI/CD Pipeline Automation</h3>
+                        <p class="text-gray-500">Designing and implementing end-to-end Continuous Integration and Continuous Delivery workflows.</p>
+                    </div>
+
+                    <!-- Skill Card 3: Jenkins Expertise -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-indigo-500">
+                        <div class="text-3xl text-indigo-500 mb-3">🚀</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Jenkins & Automation Tools</h3>
+                        <p class="text-gray-500">Extensive experience setting up and managing Jenkins, GitLab CI, and other crucial automation tools.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About/Testimonial Section repurposed for Experience -->
+        <section id="projects" class="py-16 bg-white">
+            <div class="max-w-3xl mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Key Achievements</h2>
+                <blockquote class="text-2xl italic text-gray-600 mb-8">
+                    "Successfully reduced deployment time from 45 minutes to under 5 minutes by implementing a fully automated, containerized CI/CD pipeline using Jenkins and Kubernetes."
+                </blockquote>
+                <div class="flex justify-center items-center">
+                    <!-- Updated: Changed placeholder image to show 'Y' for Yash -->
+                    <img src="https://placehold.co/60x60/4F46E5/FFFFFF?text=Y" onerror="this.onerror=null; this.src='https://placehold.co/60x60/4F46E5/FFFFFF?text=Y'" alt="Yash's Avatar" class="w-12 h-12 rounded-full object-cover mr-4">
+                    <!-- Updated: Changed name and title to Yash Jawade, DevOps Engineer -->
+                    <p class="text-lg font-medium text-gray-900">
+                        Yash Jawade, <span class="text-primary font-normal">DevOps Engineer</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Updated copyright to your name -->
+            <p>&copy; 2025 Yash Jawade. All rights reserved.</p>
+            <div class="mt-2 text-sm text-gray-400 space-x-4">
+                <a href="#" class="hover:text-primary transition duration-150">LinkedIn</a>
+                <a href="#" class="hover:text-primary transition duration-150">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple Feedback Modal/Message Box (Replaces alert()) -->
+    <div id="feedback-modal" class="hidden fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center p-4">
+        <div class="bg-white p-6 rounded-lg shadow-2xl max-w-sm w-full text-center transform transition-all scale-100 duration-300">
+            <div class="text-2xl font-bold text-secondary mb-3">Action Complete</div>
+            <p id="modal-message" class="text-gray-600 mb-4">You can now link this button to your actual contact page or projects page!</p>
+            <button onclick="document.getElementById('feedback-modal').classList.add('hidden')" class="px-6 py-2 bg-primary text-white rounded-lg hover:bg-indigo-700 transition duration-150">
+                Got It
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript for simple interaction (Showing the modal) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('feedback-modal');
+            const mainCta = document.getElementById('main-cta-button');
+            const navCta = document.getElementById('cta-button-nav');
+            const modalMessage = document.getElementById('modal-message');
+
+            /**
+             * Handles the CTA click event.
+             * @param {string} message The message to display in the modal.
+             */
+            function handleCtaClick(message) {
+                modalMessage.textContent = message;
+                modal.classList.remove('hidden');
+            }
+
+            // Attach event listeners to the buttons
+            mainCta.addEventListener('click', () => {
+                handleCtaClick("Awesome! Normally, this would take you to a dedicated projects section.");
+            });
+
+            navCta.addEventListener('click', (event) => {
+                event.preventDefault(); // Prevent default link behavior
+                handleCtaClick("Ready to connect? This button should link to your email or contact form.");
+            });
+        });
+    </script>
+</body>
+</html>
